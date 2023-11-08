@@ -6,13 +6,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/adiossnowdrop/langchaingo/agents"
+	"github.com/adiossnowdrop/langchaingo/chains"
+	"github.com/adiossnowdrop/langchaingo/llms/openai"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/tools"
+	"github.com/adiossnowdrop/langchaingo/tools/serpapi"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/agents"
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/tools"
-	"github.com/tmc/langchaingo/tools/serpapi"
 )
 
 type testAgent struct {

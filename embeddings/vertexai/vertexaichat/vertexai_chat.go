@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/llms/vertexai"
+	"github.com/adiossnowdrop/langchaingo/embeddings"
+	"github.com/adiossnowdrop/langchaingo/llms/vertexai"
 )
 
 // ChatVertexAI is the embedder using the VertexAI api.

@@ -6,11 +6,11 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/adiossnowdrop/langchaingo/chains"
+	"github.com/adiossnowdrop/langchaingo/llms/openai"
+	"github.com/adiossnowdrop/langchaingo/memory"
+	"github.com/adiossnowdrop/langchaingo/tools"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/chains"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/tools"
 )
 
 func TestConversationalWithMemory(t *testing.T) {

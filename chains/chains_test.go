@@ -7,10 +7,10 @@ import (
 	"testing"
 	"time"
 
+	"github.com/adiossnowdrop/langchaingo/llms"
+	"github.com/adiossnowdrop/langchaingo/prompts"
+	"github.com/adiossnowdrop/langchaingo/schema"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
 )
 
 type testLanguageModel struct {

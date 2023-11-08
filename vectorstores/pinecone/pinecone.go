@@ -4,10 +4,10 @@ import (
 	"context"
 	"errors"
 
+	"github.com/adiossnowdrop/langchaingo/embeddings"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/vectorstores"
 	"github.com/pinecone-io/go-pinecone/pinecone_grpc"
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
 	"google.golang.org/grpc"
 )
 

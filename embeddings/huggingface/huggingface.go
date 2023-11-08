@@ -4,8 +4,8 @@ import (
 	"context"
 	"strings"
 
-	"github.com/tmc/langchaingo/embeddings"
-	"github.com/tmc/langchaingo/llms/huggingface"
+	"github.com/adiossnowdrop/langchaingo/embeddings"
+	"github.com/adiossnowdrop/langchaingo/llms/huggingface"
 )
 
 // Huggingface is the embedder using the Huggingface hub api.

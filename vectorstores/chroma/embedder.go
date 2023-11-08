@@ -3,8 +3,8 @@ package chroma
 import (
 	"context"
 
+	"github.com/adiossnowdrop/langchaingo/embeddings"
 	chroma_go "github.com/amikos-tech/chroma-go"
-	"github.com/tmc/langchaingo/embeddings"
 )
 
 var _ chroma_go.EmbeddingFunction = chromaGoEmbedder{} // compile-time check

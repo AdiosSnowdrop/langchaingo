@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"os"
 
+	"github.com/adiossnowdrop/langchaingo/embeddings"
 	chromago "github.com/amikos-tech/chroma-go"
-	"github.com/tmc/langchaingo/embeddings"
 )
 
 const (

@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/adiossnowdrop/langchaingo/embeddings/openai"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/vectorstores"
+	"github.com/adiossnowdrop/langchaingo/vectorstores/pinecone"
 	"github.com/google/uuid"
-	"github.com/tmc/langchaingo/embeddings/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
-	"github.com/tmc/langchaingo/vectorstores/pinecone"
 )
 
 func main() {

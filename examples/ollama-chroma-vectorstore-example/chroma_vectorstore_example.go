@@ -7,13 +7,13 @@ import (
 	"os"
 	"strings"
 
+	ollama_emb "github.com/adiossnowdrop/langchaingo/embeddings/ollama"
+	"github.com/adiossnowdrop/langchaingo/llms/ollama"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/vectorstores"
+	"github.com/adiossnowdrop/langchaingo/vectorstores/chroma"
 	chroma_go "github.com/amikos-tech/chroma-go"
 	"github.com/google/uuid"
-	ollama_emb "github.com/tmc/langchaingo/embeddings/ollama"
-	"github.com/tmc/langchaingo/llms/ollama"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
-	"github.com/tmc/langchaingo/vectorstores/chroma"
 )
 
 func main() {

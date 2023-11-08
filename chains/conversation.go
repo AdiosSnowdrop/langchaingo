@@ -1,10 +1,10 @@
 package chains
 
 import (
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/outputparser"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/llms"
+	"github.com/adiossnowdrop/langchaingo/outputparser"
+	"github.com/adiossnowdrop/langchaingo/prompts"
+	"github.com/adiossnowdrop/langchaingo/schema"
 )
 
 //nolint:lll

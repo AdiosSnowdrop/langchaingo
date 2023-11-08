@@ -9,10 +9,10 @@ import (
 	"net/http"
 	"regexp"
 
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/llms"
+	"github.com/adiossnowdrop/langchaingo/memory"
+	"github.com/adiossnowdrop/langchaingo/prompts"
+	"github.com/adiossnowdrop/langchaingo/schema"
 )
 
 const (

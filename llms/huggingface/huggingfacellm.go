@@ -5,10 +5,10 @@ import (
 	"errors"
 	"os"
 
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/huggingface/internal/huggingfaceclient"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/callbacks"
+	"github.com/adiossnowdrop/langchaingo/llms"
+	"github.com/adiossnowdrop/langchaingo/llms/huggingface/internal/huggingfaceclient"
+	"github.com/adiossnowdrop/langchaingo/schema"
 )
 
 var (

@@ -4,10 +4,10 @@ import (
 	"context"
 	"reflect"
 
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/openai/internal/openaiclient"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/callbacks"
+	"github.com/adiossnowdrop/langchaingo/llms"
+	"github.com/adiossnowdrop/langchaingo/llms/openai/internal/openaiclient"
+	"github.com/adiossnowdrop/langchaingo/schema"
 )
 
 type ChatMessage = openaiclient.ChatMessage

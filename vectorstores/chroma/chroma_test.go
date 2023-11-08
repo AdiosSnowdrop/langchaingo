@@ -8,15 +8,15 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/adiossnowdrop/langchaingo/chains"
+	openaiEmbeddings "github.com/adiossnowdrop/langchaingo/embeddings/openai"
+	"github.com/adiossnowdrop/langchaingo/llms/openai"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/vectorstores"
+	"github.com/adiossnowdrop/langchaingo/vectorstores/chroma"
 	chromago "github.com/amikos-tech/chroma-go"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/chains"
-	openaiEmbeddings "github.com/tmc/langchaingo/embeddings/openai"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
-	"github.com/tmc/langchaingo/vectorstores/chroma"
 )
 
 // TODO (noodnik2):

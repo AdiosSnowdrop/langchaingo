@@ -1,7 +1,7 @@
 package openai
 
 import (
-	"github.com/tmc/langchaingo/llms/openai"
+	"github.com/adiossnowdrop/langchaingo/llms/openai"
 )
 
 const (

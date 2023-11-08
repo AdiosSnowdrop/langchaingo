@@ -1,11 +1,11 @@
 package agents
 
 import (
-	"github.com/tmc/langchaingo/callbacks"
-	"github.com/tmc/langchaingo/memory"
-	"github.com/tmc/langchaingo/prompts"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/tools"
+	"github.com/adiossnowdrop/langchaingo/callbacks"
+	"github.com/adiossnowdrop/langchaingo/memory"
+	"github.com/adiossnowdrop/langchaingo/prompts"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/tools"
 )
 
 type CreationOptions struct {

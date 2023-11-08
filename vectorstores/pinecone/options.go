@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tmc/langchaingo/embeddings"
+	"github.com/adiossnowdrop/langchaingo/embeddings"
 )
 
 const (

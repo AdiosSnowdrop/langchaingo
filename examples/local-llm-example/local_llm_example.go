@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/tmc/langchaingo/llms/local"
+	"github.com/adiossnowdrop/langchaingo/llms/local"
 )
 
 func main() {

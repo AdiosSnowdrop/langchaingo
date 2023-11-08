@@ -7,13 +7,13 @@ import (
 	"strings"
 	"testing"
 
+	"github.com/adiossnowdrop/langchaingo/chains"
+	openaiEmbeddings "github.com/adiossnowdrop/langchaingo/embeddings/openai"
+	"github.com/adiossnowdrop/langchaingo/llms/openai"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/vectorstores"
 	"github.com/google/uuid"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/chains"
-	openaiEmbeddings "github.com/tmc/langchaingo/embeddings/openai"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/vectorstores"
 	"github.com/weaviate/weaviate-go-client/v4/weaviate/filters"
 	"github.com/weaviate/weaviate/entities/models"
 )

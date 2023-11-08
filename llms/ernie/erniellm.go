@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/tmc/langchaingo/llms"
-	"github.com/tmc/langchaingo/llms/ernie/internal/ernieclient"
-	"github.com/tmc/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/llms"
+	"github.com/adiossnowdrop/langchaingo/llms/ernie/internal/ernieclient"
+	"github.com/adiossnowdrop/langchaingo/schema"
 )
 
 var (

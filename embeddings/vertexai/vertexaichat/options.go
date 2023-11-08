@@ -1,7 +1,7 @@
 package vertexaichat
 
 import (
-	"github.com/tmc/langchaingo/llms/vertexai"
+	"github.com/adiossnowdrop/langchaingo/llms/vertexai"
 )
 
 const (

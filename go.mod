@@ -1,4 +1,4 @@
-module github.com/tmc/langchaingo
+module github.com/adiossnowdrop/langchaingo
 
 go 1.20
 

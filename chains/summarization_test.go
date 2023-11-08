@@ -5,11 +5,11 @@ import (
 	"os"
 	"testing"
 
+	"github.com/adiossnowdrop/langchaingo/documentloaders"
+	"github.com/adiossnowdrop/langchaingo/llms/openai"
+	"github.com/adiossnowdrop/langchaingo/schema"
+	"github.com/adiossnowdrop/langchaingo/textsplitter"
 	"github.com/stretchr/testify/require"
-	"github.com/tmc/langchaingo/documentloaders"
-	"github.com/tmc/langchaingo/llms/openai"
-	"github.com/tmc/langchaingo/schema"
-	"github.com/tmc/langchaingo/textsplitter"
 )
 
 func loadTestData(t *testing.T) []schema.Document {
