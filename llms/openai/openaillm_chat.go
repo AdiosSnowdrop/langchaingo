@@ -71,6 +71,7 @@ func (o *Chat) Generate(ctx context.Context, messageSets [][]schema.ChatMessage,
 			N:                opts.N, // TODO: note, we are not returning multiple completions
 			FrequencyPenalty: opts.FrequencyPenalty,
 			PresencePenalty:  opts.PresencePenalty,
+			ResponseFormat:   opts.ResponseFormat,
 
 			FunctionCallBehavior: openaiclient.FunctionCallBehavior(opts.FunctionCallBehavior),
 		}

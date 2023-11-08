@@ -7,6 +7,7 @@ type CallOption func(*CallOptions)
 
 // CallOptions is a set of options for LLM.Call.
 type CallOptions struct {
+	ResponseFormat string `json:"response_format"`
 	// Model is the model to use.
 	Model string `json:"model"`
 	// MaxTokens is the maximum number of tokens to generate.
@@ -182,5 +183,11 @@ func WithFunctionCallBehavior(behavior FunctionCallBehavior) CallOption {
 func WithFunctions(functions []FunctionDefinition) CallOption {
 	return func(o *CallOptions) {
 		o.Functions = functions
+	}
+}
+
+func WithResponseFormat(foramt string) CallOption {
+	return func(o *CallOptions) {
+		o.ResponseFormat = foramt
 	}
 }
