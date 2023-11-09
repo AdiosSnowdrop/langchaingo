@@ -71,10 +71,15 @@ func (o *Chat) Generate(ctx context.Context, messageSets [][]schema.ChatMessage,
 			N:                opts.N, // TODO: note, we are not returning multiple completions
 			FrequencyPenalty: opts.FrequencyPenalty,
 			PresencePenalty:  opts.PresencePenalty,
-			ResponseFormat:   opts.ResponseFormat,
 
 			FunctionCallBehavior: openaiclient.FunctionCallBehavior(opts.FunctionCallBehavior),
 		}
+		if opts.ResponseFormat != "" {
+			req.ResponseFormat = &openaiclient.ResponseFormat{
+				Type: opts.ResponseFormat,
+			}
+		}
+
 		for _, fn := range opts.Functions {
 			req.Functions = append(req.Functions, openaiclient.FunctionDefinition{
 				Name:        fn.Name,

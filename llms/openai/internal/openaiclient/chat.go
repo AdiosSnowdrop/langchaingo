@@ -18,17 +18,17 @@ const (
 
 // ChatRequest is a request to complete a chat completion..
 type ChatRequest struct {
-	Model            string         `json:"model"`
-	Messages         []*ChatMessage `json:"messages"`
-	Temperature      float64        `json:"temperature,omitempty"`
-	TopP             float64        `json:"top_p,omitempty"`
-	MaxTokens        int            `json:"max_tokens,omitempty"`
-	N                int            `json:"n,omitempty"`
-	StopWords        []string       `json:"stop,omitempty"`
-	Stream           bool           `json:"stream,omitempty"`
-	FrequencyPenalty float64        `json:"frequency_penalty,omitempty"`
-	PresencePenalty  float64        `json:"presence_penalty,omitempty"`
-	ResponseFormat   string         `json:"response_format,omitempty"`
+	Model            string          `json:"model"`
+	Messages         []*ChatMessage  `json:"messages"`
+	Temperature      float64         `json:"temperature,omitempty"`
+	TopP             float64         `json:"top_p,omitempty"`
+	MaxTokens        int             `json:"max_tokens,omitempty"`
+	N                int             `json:"n,omitempty"`
+	StopWords        []string        `json:"stop,omitempty"`
+	Stream           bool            `json:"stream,omitempty"`
+	FrequencyPenalty float64         `json:"frequency_penalty,omitempty"`
+	PresencePenalty  float64         `json:"presence_penalty,omitempty"`
+	ResponseFormat   *ResponseFormat `json:"response_format,omitempty"`
 
 	// Function definitions to include in the request.
 	Functions []FunctionDefinition `json:"functions,omitempty"`
@@ -41,6 +41,10 @@ type ChatRequest struct {
 	// StreamingFunc is a function to be called for each chunk of a streaming response.
 	// Return an error to stop streaming early.
 	StreamingFunc func(ctx context.Context, chunk []byte) error `json:"-"`
+}
+
+type ResponseFormat struct {
+	Type string `json:"type"`
 }
 
 // ChatMessage is a message in a chat request.
